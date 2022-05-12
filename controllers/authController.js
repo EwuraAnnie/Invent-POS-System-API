@@ -40,7 +40,7 @@ const login = async (req, res) => {
   const { email, password } = req.body;
 
   // check if email exist
-  const shop = await Shop.findOne({ email });
+  const shop = await Shop.findOne({ email }).populate("product");
   if (!shop) return res.status(400).json({ message: "Invalid credentials" });
 
   // decrypt and compare if password matches the one in the database

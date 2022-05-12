@@ -24,6 +24,10 @@ const shopSchema = new Schema(
       required: true,
       length: 12,
     },
+    product: {
+      type: Schema.Types.ObjectId,
+      ref: "Product",
+    },
   },
   {
     timestamps: true,

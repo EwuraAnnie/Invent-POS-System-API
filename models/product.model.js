@@ -15,9 +15,9 @@ const productSchema = new Schema(
       type: Number,
       required: [true, "Product quantity is required"],
     },
-    store: {
+    shop: {
       type: Schema.Types.ObjectId,
-      ref: "Store",
+      ref: "Shop",
     },
     image: {
       type: String,
