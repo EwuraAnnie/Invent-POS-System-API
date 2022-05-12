@@ -1,5 +1,5 @@
 {
-  "name": "backend",
+  "name": "invent-backend",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -9,6 +9,7 @@
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.3.1"
+    "mongoose": "^6.3.1",
+    "multer": "^1.4.4"
   }
 }

@@ -15,10 +15,13 @@ const productSchema = new Schema(
       type: Number,
       required: [true, "Product quantity is required"],
     },
-    // store: {
-    //   type: Schema.Types.ObjectId,
-    //   ref: "Store",
-    // },
+    store: {
+      type: Schema.Types.ObjectId,
+      ref: "Store",
+    },
+    image: {
+      type: String,
+    },
   },
   { timestamps: true }
 );

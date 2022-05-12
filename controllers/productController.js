@@ -16,7 +16,7 @@ const createProduct = async (req, res) => {
   // const store = await Store.findOne(req.body.store);
   // if (!store) return res.status(400).json({ msg: "Store not found" });
   // create product
-  const product = await Product.create(req.body);
+  const product = await Product.create({ ...req.body, image: req.file.path });
   res.status(201).json({ product });
 };
 
